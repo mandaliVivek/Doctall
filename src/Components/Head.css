@@ -1,0 +1,153 @@
+
+.navbar-custom {
+    background-color: #00839b;
+    color: white;
+  }
+  
+  .navbar-custom .nav-link {
+    color: white !important;
+  }
+  
+  .navbar-custom .nav-item {
+    margin-bottom: 0;
+    width: max-content; 
+  } 
+
+  .navbar-nav .dropdown-menu {
+    overflow-y: visible !important;
+    margin-top: 0 !important;
+    width: 100%;
+    background-color: #00839b !important; 
+  }
+  
+  .navbar-custom .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: none;
+    box-shadow: none;
+     /* background-color: #00839b;  */
+    /* color: white; */
+    padding: 0;
+  }
+  
+  .navbar-custom .dropdown-menu.show {
+    display: block;
+  }
+  
+  .navbar-custom .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: white;
+    width: max-content;
+  }
+
+/* CSS */
+.dropdown-container .dropdown-items .nav-item {
+  margin-left: 7%;
+  position: relative;
+  padding-left: 15px; /* Adjust padding for space for the line */
+}
+
+.dropdown-container .dropdown-items .nav-item:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.dropdown-container .dropdown-items .nav-item:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px; /* Width of the orangered line */
+  background-color: orangered;
+}
+
+
+
+.card {
+    background-color: #f8f9fa;
+    padding: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    color: orangered;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #343a40;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card button {
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card button img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.card button:hover {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    cursor: pointer;
+}
+
+.card button:focus {
+    outline: none;
+    box-shadow: 0 0 5px orangered;
+}
+
+/* Hide images by default */
+.img-mobile {
+  display: none;
+}
+
+/* Show images only in mobile mode (screen width below 768px) */
+@media (max-width: 768px) {
+  .img-mobile {
+      display: inline-block;
+  }
+}
+
+  
+  @media (max-width: 768px) {
+    .navbar-custom .dropdown-item {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding-left: 1rem;
+      margin: 0;
+    }
+  
+    .navbar-custom .dropdown-menu {
+      position: relative;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  
+    .navbar-custom .nav-item {
+      margin-bottom: 1rem; 
+    }
+  
+    .navbar-custom .dropdown-toggle::after {
+      display: none; 
+    }
+  }
+  
+
+

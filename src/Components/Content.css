@@ -1,0 +1,214 @@
+
+.content-container {
+    margin: 0 5%;
+    padding: 20px 0;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-family: 'Visuelt Pro';
+    text-align: initial;
+    margin-left: 0%;
+    color: #FF5C3C; 
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    color: #143656; 
+    font-family: 'Visuelt Pro';
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #0c5273;
+    flex: 1 1 30%;
+    height: 45vh;
+    font-family: 'Visuelt Pro', sans-serif;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    font-size: medium;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    opacity: 0.9;
+    font-weight: 300;
+    font-family: 'Visuelt Pro', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.card:nth-child(1) {
+    background-color: #0c5273;
+    background-image: url('../assets/banner91.jpg.svg');
+    background-size: 100% auto; 
+}
+
+.card:nth-child(2) {
+    background-color: #263238;
+    background-image: url('../assets/banner91.jpg.svg');
+    background-size: 100% auto; 
+}
+
+.card:nth-child(3) {
+    background-color: #FF0000;
+    background-image: url('../assets/banner91.jpg.svg');
+    background-size: 100% auto; 
+}
+
+.card-title {
+    color: #FAFAFF;
+    font-size: 28px;
+    font-style: normal;
+    font-family: Visuelt Pro;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: left;
+  
+}
+
+.card-text {
+    font-style: normal;
+    font-family: Visuelt Pro;
+    font-weight: 400;
+    color: #FAFAFF;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.card-image {
+    height: 150px; 
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.card-button {
+    color: #143656;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+    /* transition: background-color 0.3s ease; */
+    margin-top: auto;
+    align-self: flex-start;
+    font-weight: bold;
+    max-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        margin: 0 5%;
+        padding: 10px 0;
+        width: 80%;
+    }
+
+    .section-title,
+    .main-title,
+    .card-title,
+    .card-text {
+        text-align: left;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px 0;
+        height: 100vh;
+        text-align: left;
+    }
+
+    .card-image {
+        position: relative;
+        margin: 10px auto;
+        display: block;
+        height: max-content;
+        width: min-content;
+        text-align: left;
+    }
+
+    .card-button {
+        width: auto;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .card-background-image {
+        height: 100%;
+        background-size: cover; /* Ensures the image covers the entire container */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        width: 90%;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-image {
+        height: 144px;
+        width: min-content;
+        position: relative;
+    }
+
+    .card-background-image {
+        height: 100%;
+        background-size: cover; /* Ensures the image covers the entire container */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+    }
+
+    .card-button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+        text-align: left;
+    }
+}
+

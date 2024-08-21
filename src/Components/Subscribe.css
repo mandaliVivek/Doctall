@@ -1,0 +1,132 @@
+
+ .subscribe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    background-color: #F2F8F9;
+    height: 80vh;
+    padding: 2rem;
+    font-family: 'Visuelt Pro', sans-serif;
+    background-image: url('../assets/HBanner4.jpg.svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.subscribe-text {
+    flex: 1;
+    margin-right: 2rem;
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+    width: 45%; 
+    text-align: left;
+    margin-left: 10%;
+}
+
+.subscribe-text h1 {
+    text-align: left;
+    margin-left: 0; 
+    color: #002931;
+    font-size: 3rem; 
+    line-height: 1.2; 
+    letter-spacing: -0.02em;
+}
+
+.subscribe-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    margin: 0; 
+    padding-bottom: 1rem; 
+}
+
+.subscribe-form {
+    flex: 1;
+    max-width: 100%; 
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 10%;
+}
+
+.subscribe-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+}
+
+.subscribe-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 100%; 
+}
+
+.subscribe-form button {
+    background-color: orangered;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: normal;
+    max-width: 100%; 
+}
+
+.subscribe-form p {
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: normal;
+    line-height: 1.2; 
+    margin: 1rem 0; 
+}
+
+@media (max-width: 768px) {
+    .subscribe-section {
+        flex-direction: column;
+        align-items: center; 
+        height: auto;
+    }
+
+    .subscribe-text {
+        margin: 0 0 2rem 0;
+        text-align: center;
+        width: 80%; 
+    }
+
+    .subscribe-form {
+        width: 100%;
+        margin-left: 10%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-text p {
+        font-size: 0.9rem;
+    }
+
+    .subscribe-form {
+        padding: 1rem;
+        width: 100%;
+        margin-left: 10%; 
+    }
+
+    .subscribe-form button {
+        padding: 0.8rem;
+    }
+}

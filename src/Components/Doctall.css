@@ -1,0 +1,230 @@
+
+
+ body {
+    font-family: 'Visuelt Pro', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Visuelt Pro', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    flex-direction: initial;
+  }
+  
+  button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-family: 'Visuelt Pro', sans-serif;
+    border-color: orangered;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer; 
+  }
+  
+  p {
+    font-family: 'Visuelt Pro', sans-serif;
+    color: grey;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    position: relative;
+  }
+  
+  .divider {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid black;
+  }
+  
+  .doctall-section {
+    width: 90%;
+    margin: 0 auto; 
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .doctall-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  
+  .doctall-section h1 {
+    margin: 0;
+    flex-grow: 1; 
+    font-size: 2rem;
+  }
+  
+  .doctall-section button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid orangered; 
+  }
+  
+  .doctall-section p {
+    margin: 0 0 20px;
+    /* margin-left: 5%;  */
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .doctall-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .doctall-card {
+    text-align: left;
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .doctall-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .doctall-card h4 {
+    color: rgb(197, 59, 32);
+    margin: 10px 0;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .card-icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .doctall-card h3 {
+    color: black;
+    margin: 10px 0;
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Visuelt Pro';
+  }
+  
+  .doctall-card p {
+    color: black;
+    margin: 10px 0;
+    font-size: small;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .doctall-card button {
+    background-color: #00839B;
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #00839B;
+    align-self: flex-start;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+    font-size: small; 
+  }
+  
+  @media (max-width: 768px) {
+    .doctall-section {
+      width: 95%;
+    }
+  
+    .doctall-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .doctall-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .doctall-section button {
+      padding: 10px;
+      font-size: 0.875rem;
+    }
+  
+    .doctall-section p {
+      font-size: 0.875rem;
+    }
+
+    .doctall-card h4 {
+      text-align: initial;
+    }
+  
+    .doctall-card h3 {
+      font-size: 1rem;
+    }
+  
+    .doctall-card p {
+      font-size: 0.875rem;
+    }
+
+    .doctall-card button {
+      text-align: initial;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .doctall-header {
+      align-items: flex-start;
+    }
+  
+    .doctall-section button {
+      margin: 20px auto;
+      display: block;
+    }
+  
+    .doctall-card {
+      margin-bottom: 20px;
+    }
+
+    .doctall-card h4 {
+      text-align: initial;
+    }
+  
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card-icon {
+      align-self: flex-end;
+      margin-top: -20px;
+    }
+
+    .doctall-card button {
+      text-align: initial;
+    }
+  }
+
+
+  
+
+
+
+
+
+
+

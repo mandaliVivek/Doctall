@@ -1,0 +1,243 @@
+body {
+    font-family: 'Visuelt Pro , sans-serif';
+}
+
+.disease-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 40px 60px; 
+}
+
+.disease-card {
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s, border-top 0.3s; 
+    font-weight: bold;
+    font-style: normal;
+    font-size: small;
+    max-width: 280px; 
+    min-width: 230px;
+    border-top: 2px solid #E4E7EC; 
+    cursor: pointer;
+    height: auto;
+    position: relative;
+}
+
+.disease-card:hover {
+    background-color: #ffefd5;
+    transform: translateY(-5px); 
+    border-top-color: orangered; 
+}
+ 
+.disease-card img {
+    position: relative; 
+    bottom: 0;
+    right: 0;
+    height: 100px; 
+    width: 100px;  
+    margin: 0; 
+    transition: transform 0.3s; 
+    align-self: center;
+    height: 150px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 45%;
+    margin-right: 0%;
+    margin-top: -25%;
+    transition: transform 0.3s; 
+}
+
+
+.disease-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: large; 
+    font-weight: bold;
+    font-style: normal;
+}
+
+.disease-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: smaller; 
+}
+
+.disease-card li {
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px 0;
+    color: #555;
+    font-size: 11px; 
+    position: relative;
+    padding-left: 25px; 
+}
+
+.disease-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url('../assets/Bullet.jpg.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.disease-card button {
+    background-color: #00839b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.870rem; 
+}
+
+.disease-card:hover button {
+    background-color: orangered;
+}
+
+.disease-card-imgSrc {
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+h4 {
+    margin-left: 5%;
+    color: orangered;
+    font-family: 'Visuelt Pro';
+    font-size: medium;
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3 {
+    margin-right: 45%;
+    color: black;
+    font-family: 'Visuelt Pro';
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    margin-left: 5%; 
+}
+
+@media (max-width: 1024px) {
+    .disease-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        padding: 30px 40px; 
+    }
+
+    .disease-card {
+        max-width: 100%; 
+        min-width: 200px; 
+    }
+
+    h4, h3 {
+        text-align: center; 
+    }
+
+    .disease-card-imgSrc {
+        min-height: auto;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .disease-card img {
+        height: 80px; /* Adjust size for tablet mode */
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .disease-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20px; 
+    }
+
+    h4 {
+        margin-right: 0;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    h3 {
+        margin-right: 0;
+        text-align: center;
+        font-size: small; 
+    }
+
+    .disease-card {
+        padding: 10px;
+        font-size: smaller; 
+    }
+
+    .disease-card-imgSrc {
+        height: 120px;
+        width: 80px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+
+    .disease-card button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .disease-card img {
+        height: 60px; /* Adjust size for smaller tablet/large mobile mode */
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .disease-grid {
+        grid-template-columns: 1fr; 
+        padding: 10px 10px; 
+    }
+
+    h3 {
+        font-size: medium; 
+    }
+
+    .disease-card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .disease-card-imgSrc {
+        height: 100px; 
+        width: 60px; 
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .disease-card img {
+        height: 50px; /* Adjust size for mobile mode */
+        width: 50px;
+    }
+}
+
+
